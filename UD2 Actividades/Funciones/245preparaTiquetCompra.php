@@ -15,4 +15,5 @@
     } else {
         echo "Por favor, proporciona un número válido para 'cnt'.";
     }
+    
 ?>
