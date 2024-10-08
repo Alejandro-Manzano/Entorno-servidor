@@ -43,7 +43,7 @@ function convertirACani($frase){
         }
     }
 
-    //Una vez que est amodo cani introduzco los espacios que guarde antes
+    //Una vez que esta modo cani introduzco los espacios que guarde antes
     for ($i=0; $i < $tamPosiciones; $i++) { 
         array_splice($caracteres2, $posiciones[$i], 0, ' ');
     }
