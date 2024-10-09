@@ -8,7 +8,7 @@ function convertirAPal($frase) {
     
     if ($cadena_limpia === $vuelta) {
         echo "$frase es un palíndromo <br>";
-        echo "$cadena_limpia ' = ' $vuelta";
+        echo "$cadena_limpia = $vuelta";
     } else {
         echo "$frase no es un palíndromo";
     }
