@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Información Personal</title>
+</head>
+<body>
+    <h1>Formulario de Información Personal</h1>
+    <form action="402formulario.php" method="post">
+       
+        <label for="nombre">Nombre y Apellidos:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+   
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+   
+        <label for="url">URL de tu Página Personal:</label>
+        <input type="url" id="url" name="url"><br><br>
+
+   
+        <label>Sexo:</label>
+        <input type="radio" id="sexo_m" name="sexo" value="Masculino" required>
+        <label for="sexo_m">Masculino</label>
+        <input type="radio" id="sexo_f" name="sexo" value="Femenino">
+        <label for="sexo_f">Femenino</label><br><br>
+
+        <label for="convivientes">Número de Convivientes:</label>
+        <input type="number" id="convivientes" name="convivientes" min="1" required><br><br>
+
+        <label>Aficiones:</label><br>
+        <input type="checkbox" id="aficion1" name="aficiones" value="Deportes">
+        <label for="aficion1">Deportes</label><br>
+        <input type="checkbox" id="aficion2" name="aficiones" value="Lectura">
+        <label for="aficion2">Lectura</label><br>
+        <input type="checkbox" id="aficion3" name="aficiones" value="Cine">
+        <label for="aficion3">Cine</label><br>
+        <input type="checkbox" id="aficion4" name="aficiones" value="Viajar">
+        <label for="aficion4">Viajar</label><br><br>
+
+        <label for="menu[]">Menú Favorito:</label><br>
+        <select  multiple size="4" required>
+            <option name="menu" value="Pasta">Pasta</option>
+            <option name="menu" value="Pizza">Pizza</option>
+            <option name="menu" value="Sushi">Sushi</option>
+            <option name="menu" value="Ensalada">Ensalada</option>
+        </select><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
